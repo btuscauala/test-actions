@@ -33,7 +33,5 @@ jobs:
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
         cache: 'pip'
         cache-dependency-path: 'requirements.txt'
-      # Runs a single command using the runners shell
-    - name: Installing Python requirements
-      run: |
+    - run: |
         pip3 install -r requirements.txt
