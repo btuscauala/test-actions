@@ -34,6 +34,6 @@ jobs:
     - uses: actions/cache@v2
       with:
        path: ${{ env.pythonLocation }}
-       key: ${{ env.pythonLocation }}-${{ hashFiles('setup.py') }}-${{ hashFiles('dev-requirements.txt') }}
+       key: ${{ hashFiles('dev-requirements.txt') }}
     - name: Install requirements
       run: pip install --upgrade --upgrade-strategy eager -r requirements.txt -e .
