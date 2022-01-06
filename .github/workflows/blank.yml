@@ -34,7 +34,7 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: "~/openfortivpn"
-        key: ${{ "1.12.0" }} #llevarselo a un secret como OPENFORTIVPN_VERSION
+        key: ${{ 1.12.0 }} #llevarselo a un secret como OPENFORTIVPN_VERSION
     - name: Install Forti
       run: |
            sudo apt update
